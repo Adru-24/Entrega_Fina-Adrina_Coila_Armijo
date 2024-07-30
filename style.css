@@ -1,0 +1,191 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* sección perros y gatos -enlace */
+ .galery-container{
+    width: 100%; 
+    background-color: rgb(202, 221, 219);
+    padding: 50px 0px 50px 0px;
+ }
+ .galery-container h3{
+    color: hsl(245, 26%, 25%);
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+ }
+ .galery-container .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18px;
+    
+ }
+.galery-container .grupo-1 .box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+ }
+ .galery-container .grupo-1 .box img{
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+ }
+ 
+
+/* sección video peluqueria */
+.peluqueria-container{
+    width: 100%;
+    background-color: rgb(240, 248, 252);
+}
+   .peluqueria-container .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    padding: 20px ;
+}
+.peluqueria-container .grupo-1 .box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+.peluqueria-container .grupo-1 .box iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+.peluqueria-container .grupo-1 .box h3{
+    text-align: left;
+    color: hsl(245, 26%, 25%);
+}
+
+/* Pie de pagina */
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(196, 196, 255);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+     width: 100px;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+.pie-pagina .grupo-1 .box h4{
+     color: rgb(25, 25, 31);
+     margin-bottom: 20px;
+     font-size: 18px;
+    }
+.pie-pagina .grupo-1 .box p{
+     color: rgb(55, 55, 85);
+     margin-bottom: 8px;
+     }
+.pie-pagina .grupo-1 .red-social a{
+     display: inline-block;
+     text-decoration: none;
+     width: 45px;
+     height: 45px;
+     line-height: 45px;
+     color: rgb(21, 65, 104);
+     margin-right: 6px;
+     text-align: center;
+     transition: all 300ms ease;
+    }
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(9, 121, 226);
+}
+.pie-pagina .grupo-2{
+     background-color: rgb(20, 20, 31);
+     padding: 15px 10px;
+     text-align:center;
+     color:white;
+     }
+.pie-pagina .grupo-2 p{
+     font-size: 12px;
+    }
+
+
+
+/* mobile */
+@media only screen and (max-width:500px) {
+    body{
+        background-color: aquamarine;
+    }
+
+ /* sección perros y gatos */
+ .galery-container{
+    justify-content: center;
+ }
+.galery-container .grupo-1{
+     width: 90%;
+     grid-template-columns: repeat(1, 1fr); 
+     justify-content: center;
+ }
+ .galery-container .grupo-1 .box{
+
+ padding-top: 20px;
+}
+
+.galery-container .grupo-1 .box img{
+     width:100% ;
+     height: auto;
+
+    }
+ /* sección video peluqueria */
+ 
+  .peluqueria-container .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+     }
+ .peluqueria-container .box{
+    padding-top: 35px;
+   
+    }
+ .peluqueria-container .box iframe {
+        width: 400px;
+        height: 200px;
+    }
+ /* Pie de pagina */
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        padding: 35px 0px; 
+    }
+}
+/* Tablet */
+@media only screen and (min-width:501px) and (max-width:960px){
+    body{
+        background-color: black;
+
+    }
+ 
+}
+/* Desktop */
+@media only screen and (min-width:961px) {
+    body{
+        background-color: blueviolet;
+    }
+}
+
