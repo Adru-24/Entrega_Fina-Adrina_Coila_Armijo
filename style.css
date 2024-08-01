@@ -4,41 +4,64 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* beneficios-container */
+.beneficios-container{
+   background-color: rgb(245, 223, 250); 
+   padding:3rem 0rem 3rem 0rem;
+}
+.beneficios-container .col-sm img{
+    width: 6rem;
+    margin: 4px;
+    border-radius: 100px;
+    margin:30px 0px 20px 0px;
 
-/* sección perros y gatos -enlace */
- .galery-container{
-    width: 100%; 
-    background-color: rgb(202, 221, 219);
-    padding: 50px 0px 50px 0px;
- }
- .galery-container h3{
+}
+/* productos-container */
+.productos-container{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+.productos-container .container h3{
+    text-align: center;
+    padding: 50px 0px 30px 0px;
     color: hsl(245, 26%, 25%);
+}
+.productos-container .container .row{
+    text-align: left;
+    padding: 30px 0px 40px 0px;
+}
+.productos-container .card{
+ background-color:white;
+box-shadow: #b1b1b1;
+}
+.productos-container .card .card-body{
+text-align: center;
+}
+.productos-container .card .card-body a{
+    background-color: #f749da;
+}
+/* sección perros y gatos -enlace */
+/* animales-container */
+ .animales-container{
+    width: 100%; 
+    background-color: #d1861d
+ }
+
+ .animales-container .container{
+    padding: 30px 0px 40px 0px;;
+ }
+ .animales-container .container h3{
+    color: #fdfdfd;
     padding: 10px 0px 30px 0px;
     text-align: center;
  }
- .galery-container .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 18px;
-    
- }
-.galery-container .grupo-1 .box{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-
- }
- .galery-container .grupo-1 .box img{
-    width: auto;
-    height: auto;
+ .animales-container .container .row img{
     border-radius: 12px;
- }
- 
+    margin-top: 20px;
+    max-width: 100%;
+
+ } 
+
 
 /* sección video peluqueria */
 .peluqueria-container{
@@ -128,31 +151,18 @@
 
 
 /* mobile */
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:576px) {
     body{
         background-color: aquamarine;
     }
 
- /* sección perros y gatos */
- .galery-container{
-    justify-content: center;
- }
-.galery-container .grupo-1{
-     width: 90%;
-     grid-template-columns: repeat(1, 1fr); 
-     justify-content: center;
- }
- .galery-container .grupo-1 .box{
+ /* sección perros y gatos -enlace */
+/* animales-container */
 
- padding-top: 20px;
+.animales-container .container .row img{
+    width: 90%;
 }
-
-.galery-container .grupo-1 .box img{
-     width:100% ;
-     height: auto;
-
-    }
- /* sección video peluqueria */
+ /* peluqueria-container */
  
   .peluqueria-container .grupo-1{
         width: 90%;
@@ -166,6 +176,11 @@
         width: 400px;
         height: 200px;
     }
+  /* productos-container */
+    .productos-container .card{
+    width: 16rem;
+    margin: 4px;}
+
  /* Pie de pagina */
     .pie-pagina .grupo-1{
         width: 90%;
@@ -180,12 +195,42 @@
         background-color: black;
 
     }
- 
+    .productos-container .card{
+        width: 17rem;
+        margin: 1rem;}
 }
+
+/* Tablet -medio */
+@media only screen and (min-width:769px) and (max-width:992px){
+    body{
+        background-color: rgb(152, 201, 87);
+
+    }
+
+   /* productos-container */
+    .productos-container .card{
+        width: 11rem;
+        margin: 8px;}
+}       
 /* Desktop */
-@media only screen and (min-width:961px) {
+@media only screen and (min-width:993px) and (max-width:1200px){
+    body{
+        background-color: rgb(151, 89, 89);
+
+    }
+   /* productos-container */
+   .productos-container .card{
+    width: 15rem;
+    margin: 1rem;}
+}
+/* Desktop extra grande */
+@media only screen and (min-width:1201px) {
     body{
         background-color: blueviolet;
     }
+  /* productos-container */ 
+  .productos-container .card{
+    width: 17rem;
+    margin: 1rem;}
 }
 
