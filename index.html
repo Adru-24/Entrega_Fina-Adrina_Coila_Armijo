@@ -1,9 +1,15 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- iconos de bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -12,10 +18,14 @@
 </head>
   <body>
     <!-- Navbar bootstrap -->
-       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
+     <header>
+      <div class="dato-container">
+          <p>🔥¡Agosto mes de DESCUENTOS!🎁</p>
+      </div>
+       <nav class="navbar navbar-expand-lg ">
+          <div class="container">
             <a class="navbar-brand" href="index.html">
-              <img src="imagenes/logo-petshop1.png" alt="logo-petshop"> hola
+              <img src="imagenes/logo-petshop1.png" alt="logo-petshop" class="logo-petshop">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -45,15 +55,17 @@
                 </li>
               </ul>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
               </form>
             </div>
           </div>
         </nav>
+      </header>
     <!-- fin navbar bootstrap -->
     <!-- carrusele -->
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <section>
+     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -91,6 +103,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </section>
     <!-- fin carrusele -->
     <!-- beneficios -->
       <section class="beneficios-container" >
@@ -118,31 +131,34 @@
     <!--section de productos-->    
      <section class="productos-container">  
        <div class="container"> 
-        <h3>Productos para mimarlos</h3> 
-           <div class="row">
+        <h3>Productos para mimarlos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vero.</p> 
+           <div class="row text-center">
               <div class="col-6 col-md-3 col-lg-3">  
                  <div class="card">  
                       <img src="imagenes/prod-p-1.jpg" class="card-img-top" alt="carrito para perros">  
                       <div class="card-body">  
-                          <h6 style="text-align: left;">One of three</h6>  
-                          <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur.</p>  
-                          <a href="default.asp" target="_blank" class="btn btn-primary">  
-                              <i class="bi bi-basket" style="padding-right: 8px;"></i>Agregar  
+                          <h6>BOLSO TRANSPORTADOR</h6>  
+                          <p>$ 49.999</p>  
+                          <a href="default.asp" target="_blank" class="btn btn-outline-dark">  
+                            <i class="bi bi-basket2-fill" style="padding-right: 8px;"></i>Añadir al carrito 
                            </a>  
-                       </div>  
+                       </div>
                 </div>  
               </div>  
-  
               <div class="col-6 col-md-3 col-lg-3">  
-                  <div class="card">  
+                  <div class="card"> 
+                    <a href="#">
                       <img src="imagenes/prod-p-2.jpg" class="card-img-top" alt="carrito para gatos">  
+                    </a> 
                        <div class="card-body">  
-                          <h6 style="text-align: left;">Carrito para gatos</h6>  
-                          <p style="text-align: left;">Comodidad y estilo para tu gato.</p>  
-                          <a href="default.asp" target="_blank" class="btn btn-primary">  
-                              <i class="bi bi-basket" style="padding-right: 8px;"></i>Agregar  
+                          <h6>CARRITO PARA MASCOTA</h6>  
+                          <p>$ 69.999</p>  
+                          <a href="default.asp" target="_blank" class="btn btn-outline-dark">  
+                            <i class="bi bi-basket2-fill" style="padding-right: 8px;"></i>Añadir al carrito 
                           </a>  
-                      </div>  
+                      </div>
+                     
                   </div>  
                </div>  
   
@@ -150,10 +166,10 @@
                   <div class="card">  
                       <img src="imagenes/prod-p-3.webp" class="card-img-top" alt="camita para perros">  
                        <div class="card-body">  
-                          <h6 style="text-align: left;">Camita para perros</h6>  
-                          <p style="text-align: left;">La mejor comodidad para tu compañero.</p>  
-                          <a href="default.asp" target="_blank" class="btn btn-primary">  
-                              <i class="bi bi-basket" style="padding-right: 8px;"></i>Agregar  
+                          <h6>TRANSPORTADOR FELINO</h6>  
+                          <p>$ 70.999</p>  
+                          <a href="default.asp" target="_blank" class="btn btn-outline-dark">  
+                            <i class="bi bi-basket2-fill" style="padding-right: 8px;"></i>Añadir al carrito  
                           </a>  
                        </div>  
                   </div>  
@@ -163,10 +179,10 @@
                  <div class="card">  
                     <img src="imagenes/prod-p-4.png" class="card-img-top" alt="juguete para mascotas">  
                       <div class="card-body">  
-                        <h6 style="text-align: left;">Juguete para mascotas</h6>  
-                        <p style="text-align: left;">Diversión asegurada para tu amigo peludo.</p>  
-                        <a href="default.asp" target="_blank" class="btn btn-primary">  
-                              <i class="bi bi-basket" style="padding-right: 8px;"></i>Agregar  
+                        <h6>CARRITO 3 RUDAS CANINO</h6>  
+                        <p>99.999</p>  
+                        <a href="default.asp" target="_blank" class="btn btn-outline-dark">  
+                          <i class="bi bi-basket2-fill" style="padding-right: 8px;"></i>Añadir al carrito  
                         </a>  
                       </div>  
                   </div>  
@@ -179,13 +195,18 @@
     <!--sección perros y gatos -enlace-->
     <section class="animales-container">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <h3>Todo para tu Mascota</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vero.</p>
           <div class="col-12 col-md-6">
-              <img src="imagenes/gato-b1.png" alt="productos-para-gatos">
+              <a href="html/gatos.html">
+                <img src="imagenes/gato-b1.png" alt="productos-para-gatos">
+              </a>
           </div>
           <div class="col-12 col-md-6">
-             <img src="imagenes/perro-b1.png" alt="productos-para-perros">
+             <a href="html/perros.html">
+               <img src="imagenes/perro-b1.png" alt="productos-para-perros">
+             </a>
           </div>
         </div>
       </div>
@@ -197,15 +218,17 @@
                 <iframe src="https://www.youtube.com/embed/9fBUhi2TuzU?si=iO7IP8UFH-52uNHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="box">
-                <h3>PELUQUERIA</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis placeat dolor accusamus nam fugiat consequuntur eveniet suscipit, omnis molestiae.
-                Qui minima amet odit fuga.
+                <h3>¿Tu peludo necesita un buen corte o un baño relajante? ¡Aquí estamos para mimarlo! 🐾✂️</h3>
+                <p>En nuestra peluquería, cada perro es una estrella. Nuestro equipo amante de las mascotas se asegurará de que tu compañero tenga un día divertido y salga luciendo increíble.
+                  
+                  ¡Ven y dale a tu perro el spa que se merece! Te esperamos con mucha energía y muchos mimos. 🌟
+                  
                 </p>
              </div>
          </div>
      </section>
     <!--fin sección video peluqueria-->
-       <h3 style="text-align: center; padding: 18px 0px 12px 0px;"> DESCUENTO de 10% en EFECTIVO!</h3>
+       <h3 style="text-align: center; padding: 18px 0px 12px 0px; background-color: black; color:#daa21b;"> 🔥 DESCUENTO de 15% en EFECTIVO!🎁 🐈 🐕</h3>
     
     <!-- footer -->
     <footer class="pie-pagina">
@@ -215,11 +238,11 @@
         </div>
         <div class="box">
           <h4>Nosotros</h4>
-          <p>Teléfono:
+          <p><i class="bi bi-telephone"></i> 
             0810-222-3232</p>
             <!-- <i class="bi bi-whatsapp"> -->
-            <p>Whatsapp: +54-321-2121-6432</p></i>
-           <p>Lunes a Sábados de 9 a 21 hs de 10 a 20 hs.</p>
+            <p><i class="bi bi-whatsapp"></i> +54-321-2121-6432</p></i>
+           <p><i class="bi bi-house-heart"></i> Lunes a Sábados de 9 a 21 hs de 10 a 20 hs.</p>
         </div>
         <div class="box">
           <h4>Síguenos</h4>
@@ -238,7 +261,8 @@
       </div>
     </footer>
     <!-- fin footer -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- Script de bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   </body>
-</html>                                   
+</html>                                                                   
