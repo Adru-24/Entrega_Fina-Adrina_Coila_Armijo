@@ -88,6 +88,11 @@ section .carousel{
     text-align: center;
     color: #eee8a9;
 }
+.productos-container .container .row{
+   /* justify-content: center;
+   margin-top: 20px; */
+
+}
 .productos-container .row .card{
  justify-content: center;
  border-radius: 10px;
