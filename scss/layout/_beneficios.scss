@@ -1,0 +1,32 @@
+//beneficios-container
+.beneficios-container{
+    width: 100%;
+    background-color: #e6f4f1; 
+    padding:3rem 0rem 3rem 0rem;
+    .container{
+        .row{
+            justify-content: center;
+            text-align: center;
+            .col-sm{
+                img{
+                    width: 6rem;
+                    margin: 4px;
+                    border-radius: 100px;
+                    margin:30px 0px 20px 0px;
+
+                }
+                h4{
+                    font-size: 1,10rem;
+                    color: #1c7ed6;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 14px;
+                }
+
+            }
+        }
+
+    }
+   
+}

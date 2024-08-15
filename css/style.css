@@ -1,359 +1,197 @@
-.sora-uniquifier> {
-      font-family: "Sora", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: weight;
-      font-style: normal;
-    } */
-
-
-*{ margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Sora", sans-serif;
-}
-h3{
-    font-family: "Sora", sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-}
-p{font-family: "Sora", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #334255;
-
+.sora-uniquifier {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
-/* header */
-.dato-container{
-    background-color:#1c7ed6;
-    color: #e6f4f1;
-    text-align: center;
-    height: 2rem;
-    justify-content: center;
-    font-family: "Sora", sans-serif;
-    font-weight: 800;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    border-bottom: 1px solid rgb(210, 228, 226) ;
-    background-color: white;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
-
-}
-.logo-petshop{
-    width: 200px;
+h3 {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 2.441rem;
 }
 
-
-/* carousel slide */
-section .carousel{
-    top: 50px;
-
+p {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #334255;
 }
 
-/* beneficios-container */
-.beneficios-container{
-    width: 100%;
-   background-color: #e6f4f1; 
-   padding:3rem 0rem 3rem 0rem;
+header {
+  border-bottom: 1px solid #f8f9fa;
+  background-color: white;
+  width: 100%;
 }
-.beneficios-container .col-sm img{
-    width: 6rem;
-    margin: 4px;
-    border-radius: 100px;
-    margin:30px 0px 20px 0px;
-
+header .dato-container {
+  background-color: #1c7ed6;
+  text-align: center;
+  height: 3rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
 }
-/* productos-container */
-.productos-container{
-    width: 100%;
-    background-color: #daa21b;
-    
-}
-.productos-container .container{
-    padding:30px 8px 30px 8px;
-   
-}
-.productos-container .container h3{
-    text-align: center;
-    padding-top: 15px;
-    color: #e6f4f1;
-}
-.productos-container .container p{
-    text-align: center;
-    color: #eee8a9;
-}
-.productos-container .row .card{
- justify-content: center;
- border-radius: 10px;
- margin-top: 25px;
-
+header .dato-container p {
+  color: #e6f4f1;
 }
 
-.productos-container .row .card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+.beneficios-container {
+  width: 100%;
+  background-color: #e6f4f1;
+  padding: 3rem 0rem 3rem 0rem;
+}
+.beneficios-container .container .row {
+  justify-content: center;
+  text-align: center;
+}
+.beneficios-container .container .row .col-sm img {
+  width: 6rem;
+  margin: 4px;
+  border-radius: 100px;
+  margin: 30px 0px 20px 0px;
+}
+.beneficios-container .container .row .col-sm h4 {
+  font-size: 1, 10rem;
+  color: #1c7ed6;
+  font-weight: 600;
+}
+.beneficios-container .container .row .col-sm p {
+  font-size: 14px;
 }
 
-
-.productos-container .row .card .card-body h6{
-   
-    color: #334255;
-    font-size: 14px;
-    font-weight: 400;
+.productos-container {
+  background-color: #daa21b;
 }
-.productos-container .row .card .card-body p{
-    color: #15142E;
-    font-size: 14px;
-    font-weight: 500;
-}
-.productos-container .row .card .card-body a{
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-}
-.productos-container .row .card .card-body a:hover{
-    background-color: #daa21b;
-    font-weight: 600;
-    border: none;
-    color: #ffffff;
-}
-/* sección perros y gatos -enlace */
-/* animales-container */
- .animales-container{ 
-    width: 100%;
-    background-color:#00afff;
- }
 
- .animales-container .container{
-    padding: 30px 10px 30px 10px;
- }
- .animales-container .container .row h3{
-    text-align: center;
-    padding-top: 15px;
-    color: #e6f4f1;
-    font-size:2rem;
- }
- .animales-container .container .row p{
-    text-align: center;
-    color: #e6f4f1;}
-
- .animales-container .container .row img{
-    border-radius: 50px 15PX;
-    margin-top: 20px;
-    max-width: 100%;}
-
-    .animales-container .container .row img:hover{
+.animales-container {
+  background-color: #00afff;
+}
+.animales-container .container {
+  padding: 30px 10px;
+}
+.animales-container .container .row h3 {
+  text-align: center;
+  padding-top: 15px;
+  color: #e6f4f1;
+  font-size: 2rem;
+}
+.animales-container .container .row p {
+  text-align: center;
+  color: #e6f4f1;
+}
+.animales-container .container .row .col-12 a img,
+.animales-container .container .row .col-md-6 a img {
+  border-radius: 50px 15PX;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+.animales-container .container .row .col-12 a img:hover,
+.animales-container .container .row .col-md-6 a img:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 50px 50px; 
+  border-radius: 50px 50px;
   opacity: 0.9;
 }
 
-
-/* sección video peluqueria */
-.peluqueria-container{
-    width: 100%;
-    background-color: #e6f4f1;
+.pelu-container {
+  width: 100%;
+  background-color: #e6f4f1;
 }
-   .peluqueria-container .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 24px;
-    padding: 20px ;
+.pelu-container .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0px;
 }
-.peluqueria-container .grupo-1 .box{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    align-items: center;
+.pelu-container .container .box {
+  width: 50%;
+  text-align: left;
+  padding: 20px 16px;
+  color: #1c7ed6;
 }
-.peluqueria-container .grupo-1 .box iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 15px;
+.pelu-container .container .box iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
 }
-.peluqueria-container .grupo-1 .box h3{
-    text-align: left;
-    padding: 40px 0px 18px 0px;
-    color: #1c7ed6;
-    font-size:2rem;
+.pelu-container .container .box h3 {
+  text-align: left;
+  padding: 10px 0px 18px 0px;
+  color: #1c7ed6;
+  font-size: 2rem;
 }
 
-/* Pie de pagina */
-.pie-pagina{
-    width: 100%;
-    background-color: #1c7ed6;
+.pie-pagina {
+  width: 100%;
+  background-color: #1c7ed6;
 }
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 40px;
-    padding: 45px 0px;
+.pie-pagina .grupo-1 {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box{
-padding-top: 15px;
-
+.pie-pagina .grupo-1 .box {
+  padding-top: 15px;
 }
-.pie-pagina .grupo-1 .box figure{
-     width: 100px;
-     height: 100px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    }
-.pie-pagina .grupo-1 .box h4{
-     color: #e6f4f1;
-     margin-bottom: 20px;
-     font-size: 18px;
-    }
-.pie-pagina .grupo-1 .box p{
-     color: #e6f4f1;
-     margin-bottom: 8px;
-     }
-.pie-pagina .grupo-1 .red-social a{
-     display: inline-block;
-     text-decoration: none;
-     width: 45px;
-     height: 45px;
-     line-height: 45px;
-     color: #e6f4f1;
-     margin-right: 6px;
-     text-align: center;
-     transition: all 300ms ease;
-    }
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: #daa21b;
+.pie-pagina .grupo-1 .box figure {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pie-pagina .grupo-2{
-     background-color: #003581;
-     padding: 15px 10px;
-     text-align:center;
-     color:white;
-     }
-.pie-pagina .grupo-2 p{
-     font-size: 12px;
-    }
+.pie-pagina .grupo-1 .box h4 {
+  color: #e6f4f1;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #e6f4f1;
+  margin-bottom: 8px;
+}
+.pie-pagina .grupo-1 .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #e6f4f1;
+  margin-right: 6px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box .red-social:hover {
+  color: #daa21b;
+}
+.pie-pagina .grupo-2 {
+  background-color: #003581;
+  padding: 15px 10px;
+  text-align: center;
+}
+.pie-pagina .grupo-2 p {
+  font-size: 12px;
+  color: #e6f4f1;
+}
 
-    /* html perros */
-    .titulo-container{
-        margin-top: 150px;
-        margin-bottom: 50px;
-        text-align: center;
-
-    }
-    .catalogo-container{
-        background-color: #daa21b;
-        text-align: center;
-        padding-top: 30px;
-    }
-    .catalogo-container .col-sm {
-       height: 70px;
-
-    }
-    .catalogo-container a{
-        color:white;
-        text-decoration: none;
-    }
-    .catalogo-container a:hover{
-    text-decoration:underline;
-    }
-
-    /* html contacto */
-    .datos-container{
-        margin-top: 150px;
-        margin-bottom: 50px;
-    }
-    .dato-container .container{
-        text-align: left;
-    }
-
-/* mobile */
-@media only screen and (max-width:576px) {
-    /* body{
-        background-color: aquamarine;
-    } */
- /* productos-container */
-    .productos-container .row .card{
-        width: 12rem;
-    }
-
- /* sección perros y gatos -enlace */
-
- /* peluqueria-container */
- 
-  .peluqueria-container .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-     }
- .peluqueria-container .box{
+@media (max-width: 320px) {
+  .peluqueria-container .box {
     padding-top: 35px;
-   
-    }
- .peluqueria-container .box iframe {
-        width: 400px;
-        height: 200px;
-    }
-  
-
- /* Pie de pagina */
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        column-gap: 30px;
-        padding: 35px 0px; 
-    }
-}
-/* Tablet */
-@media only screen and (min-width:577px) and (max-width:768px){
-    /* body{
-        background-color: black;
-    } */
-     .productos-container .row .card{
-        width: 16rem;}
+  }
+  .peluqueria-container .box .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .peluqueria-container .box .grupo-1 iframe {
+    width: 300px;
+    height: 200px;
+  }
 }
 
-/* Tablet -medio */
-@media only screen and (min-width:769px) and (max-width:992px){
-    /* body{
-        background-color: rgb(152, 201, 87);
-    } */
-
-   /* productos-container */
-    .productos-container .row .card {
-        width: 10rem;
-    }
-   
-}       
-
-/* Desktop */
-@media only screen and (min-width:993px) and (max-width:1200px){
-    /* body{
-        background-color: rgb(151, 89, 89);
- } */
-   /* productos-container */
-   .productos-container .row .card{
-    width: 15rem;
-    }
-}
-/* Desktop extra grande */
-@media only screen and (min-width:1201px) {
-    /* body{
-        background-color: blueviolet;
-    } */
-  /* productos-container */ 
- .productos-container .row .card{
-    width: 16rem;}
-}
-
+/*# sourceMappingURL=style.css.map */
