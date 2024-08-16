@@ -1,0 +1,29 @@
+.productos-container{
+    background-color: #1c7ed6;
+    .container{
+        padding:30px 8px 30px 8px;
+
+        h3{
+            text-align: center;
+            padding-top: 15px;
+            color: #e6f4f1;
+        }
+        p{
+            text-align: center;
+            color: #eee8a9;
+        }
+        .row {
+            background-color: #1c7ed6;
+            .card{
+                justify-content: center;
+                border-radius: 10px;
+                margin-top: 25px;
+            }
+            &:hover{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+            }
+        }
+           
+    }
+}

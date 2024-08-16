@@ -1,0 +1,20 @@
+//card
+.card-container{
+    width: 20rem;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #daa21b;
+
+    .card {
+        display: flex;
+        align-items: center;
+        h4{
+            color: #daa21b;
+        }
+        p{
+            color: aqua;
+            padding: 10;
+        }
+    }
+}

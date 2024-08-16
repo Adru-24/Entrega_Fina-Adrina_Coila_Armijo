@@ -3,9 +3,16 @@
 //layout
 @import './layout/header';
 @import './layout/beneficios';
-@import './layout/card';
+@import './layout/card-producto';
 @import './layout/animales';
 @import './layout/pelu';
 @import './layout/footer';
+
+//html
+@import './layout/card-container';
+@import './components/cards';
 //media
 @import './layout/media320';
+@import './layout/media577';
+@import './layout/media768';
+

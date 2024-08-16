@@ -19,35 +19,8 @@ section .carousel{
 
 
 /* productos-container */
-.productos-container{
-    width: 100%;
-    background-color: #daa21b;
-    
-}
-.productos-container .container{
-    padding:30px 8px 30px 8px;
-   
-}
-.productos-container .container h3{
-    text-align: center;
-    padding-top: 15px;
-    color: #e6f4f1;
-}
-.productos-container .container p{
-    text-align: center;
-    color: #eee8a9;
-}
-.productos-container .row .card{
- justify-content: center;
- border-radius: 10px;
- margin-top: 25px;
 
-}
-
-.productos-container .row .card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
+.productos-container .row .card
 
 
 .productos-container .row .card .card-body h6{

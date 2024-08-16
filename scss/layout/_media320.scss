@@ -1,5 +1,6 @@
-@media (max-width: 320px){
-    .peluqueria-container{
+// Para  mobile phones: 
+@media only screen and (max-width: 320px){
+.peluqueria-container{
         .box{
             padding-top: 35px;
             .grupo-1{
@@ -12,4 +13,5 @@
             }
         }
     }
+    
 }
