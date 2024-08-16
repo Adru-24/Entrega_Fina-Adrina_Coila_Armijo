@@ -16,35 +16,13 @@ section .carousel{
 
 }
 
-
-
-/* productos-container */
-
-.productos-container .row .card
-
-
-.productos-container .row .card .card-body h6{
-   
-    color: #334255;
-    font-size: 14px;
-    font-weight: 400;
-}
 .productos-container .row .card .card-body p{
     color: #15142E;
     font-size: 14px;
     font-weight: 500;
+
 }
-.productos-container .row .card .card-body a{
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-}
-.productos-container .row .card .card-body a:hover{
-    background-color: #daa21b;
-    font-weight: 600;
-    border: none;
-    color: #ffffff;
-}
+
 /* sección perros y gatos -enlace */
 /* animales-container */
  .animales-container{ 

@@ -3,26 +3,33 @@
     width: 100%;
     background-color: #e6f4f1;
    .container{
-        display:flex;
-        flex-wrap: wrap;
-        padding: 40px 0px;
-        .box{
-            width: 50%;
-            text-align: left;
-            padding: 20px 16px;
-            color: #1c7ed6;
-            iframe{
-                width: 70%;
-                height: 500px;
-                border-radius: 20px;
-            }
-            h3{
+    background-color: #1c7ed6;
+    padding:3rem 3rem;
+        .row{
+            justify-content: center;
+            text-align: center;
+        
+            .col-sm{
+                width: 50%;
                 text-align: left;
-                padding: 10px 0px 18px 0px;
+                padding: 20px 16px;
                 color: #1c7ed6;
-                font-size:2rem;
+                
+                h3{
+                    font-size: 2rem;
+                    color: #e6f4f1;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 14px;
+                    color: #dde9e6;
+                }
+                iframe{
+                    width: 90%;
+                    height: 400px;
+                    border-radius: 20px;
+                }
             }
-        }
-
+        }       
    } 
 }

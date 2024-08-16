@@ -1,0 +1,51 @@
+.productos-container{
+    background-color: rgb(253, 253, 253);
+    padding: 30px 10px;
+
+    .container{
+        text-align: center;
+        justify-content: center;
+        padding: 20px 8px;
+
+        h3{
+         color: #1c7ed6;   
+        }
+        p{
+            color: #15142E;
+        }
+
+        .row{
+            .card{
+                margin-top: 30px;
+            
+            &:hover{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+            }
+                .card-body{
+                    h6{
+                        color: #15142E;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    p{
+                        color: black;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    a{
+                        color:#1c7ed6;
+                        font-size: 14px;
+                        font-weight: 500;
+                    &:hover{
+                        background-color: #1c7ed6;
+                        font-weight: 700;
+                        border: none;
+                        color: #ffffff;
+                    }
+                    }
+                }
+            }
+        }
+
+    }
+}
