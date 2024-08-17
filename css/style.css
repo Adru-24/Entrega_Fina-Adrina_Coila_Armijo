@@ -30,14 +30,50 @@ header {
   width: 100%;
 }
 header .dato-container {
-  background-color: #1c7ed6;
+  background-color: #b3d300;
+  padding: 10px 0px;
   text-align: center;
-  height: 3rem;
+  height: 2.5rem;
   font-family: "Sora", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 header .dato-container p {
-  color: #e6f4f1;
+  color: #26292e;
+}
+
+.portada-container {
+  width: 100%;
+  background-color: #e6f4f1;
+}
+.portada-container .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 20px;
+}
+.portada-container .container .box {
+  padding: 8px;
+}
+.portada-container .container .box h1 {
+  color: #daa21b;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.portada-container .container .box p {
+  color: rgb #404756;
+}
+.portada-container .container .box .boton {
+  color: white;
+  background-color: #1c7ed6;
+  border: none;
+  padding: 15px 32px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.portada-container .container .box .boton:hover {
+  background-color: #00afff;
+}
+.portada-container .container .box img {
+  max-width: 100%;
 }
 
 .beneficios-container {
@@ -45,7 +81,7 @@ header .dato-container p {
   margin-top: 2rem;
 }
 .beneficios-container .container {
-  background-color: #1c7ed6;
+  background-color: #daa21b;
   padding: 3rem 3rem;
   border-radius: 15px;
 }
@@ -113,19 +149,17 @@ header .dato-container p {
 }
 
 .animales-container {
-  background-color: #00afff;
+  background-color: #1c7ed6;
 }
 .animales-container .container {
-  padding: 30px 10px;
+  padding: 30px 8px;
+  text-align: center;
 }
 .animales-container .container .row h3 {
-  text-align: center;
   padding-top: 15px;
   color: #e6f4f1;
-  font-size: 2rem;
 }
 .animales-container .container .row p {
-  text-align: center;
   color: #e6f4f1;
 }
 .animales-container .container .row .col-12 a img,
@@ -180,26 +214,23 @@ header .dato-container p {
   background-color: #1c7ed6;
 }
 .pie-pagina .grupo-1 {
-  width: 100%;
-  margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 40px;
-  padding: 45px 0px;
+  padding: 45px 10px;
 }
 .pie-pagina .grupo-1 .box {
-  padding-top: 15px;
+  padding-top: 25px;
 }
 .pie-pagina .grupo-1 .box figure {
-  width: 100px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .pie-pagina .grupo-1 .box h4 {
-  color: #e6f4f1;
-  margin-bottom: 20px;
+  color: white;
+  margin-bottom: 15px;
   font-size: 18px;
 }
 .pie-pagina .grupo-1 .box p {
@@ -255,6 +286,22 @@ header .dato-container p {
 .card-container .card p {
   color: aqua;
   padding: 10;
+}
+
+@media only screen and (min-width: 768px) {
+  .portada-container {
+    background-color: white;
+  }
+  .portada-container .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 0px;
+  }
+  .portada-container .container .box h1 {
+    font-size: 3.2rem;
+  }
+  .pie-pagina .grupo-1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
