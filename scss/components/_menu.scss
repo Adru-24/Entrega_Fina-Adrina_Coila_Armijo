@@ -1,0 +1,32 @@
+.menu-container{
+    background-color: #1c7ed6;
+    width: 100%; 
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    .box{text-decoration: none;
+        text-align: center;
+        ul{ 
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            color: #1c7ed6;
+            
+            
+            li{
+                margin: 5px;
+                
+                a{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    color: #1c7ed6;
+                    background-color: red;
+                    border-radius: 10px;
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+}

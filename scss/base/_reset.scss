@@ -1,14 +1,15 @@
 //fonts google
+*{  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .sora-uniquifier {
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
   } 
-*{  margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 h3{
   font-family: "Sora", sans-serif;
   font-weight: 700;

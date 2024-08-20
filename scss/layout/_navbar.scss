@@ -1,0 +1,19 @@
+.menu-conten{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    background-color: aqua;
+    .box{
+        background-color: #f1f1f1;
+        padding: 10px;
+        flex: 50%;
+        a{
+        color: rgb(209, 24, 24);
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+        
+        }
+    }
+}

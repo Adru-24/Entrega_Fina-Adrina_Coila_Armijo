@@ -1,5 +1,8 @@
 //base
 @import './base/reset';
+//components
+@import './components/boton';
+@import './components/menu';
 //layout
 @import './layout/header';
 @import './layout/portada';
@@ -12,6 +15,7 @@
 //html
 @import './layout/card-container';
 @import './components/cards';
+@import './layout/navbar';
 //media
 @import './layout/media320';
 @import './layout/media577';

@@ -1,29 +1,27 @@
 .animales-container{
-    background-color:#1c7ed6;
+    background-color:#3e90ea;
     .container{
-        padding: 30px 8px;
-        text-align: center;
+        padding: 0px 8px;
         .row{
-            h3{
-                padding-top: 15px;
-                color: #e6f4f1;
-            }
-            p{
-                color: #e6f4f1;}
-
+            align-items: center;
             .col-12,
             .col-md-6{ 
+                align-content: flex-end;
+                text-align: center;
+                h3{
+                    padding-top: 15px;
+                    color: #e6f4f1;
+                    font-size: 2.4rem;
+                }
+                p{
+                    color: #e6f4f1;}
                 a{
                     img{
-                        border-radius: 50px 15PX;
-                        margin-top: 20px;
-                        width: 100%;
-                        height: auto;
+                      max-width: 70%;
+                        height: 0%;
                     &:hover{
-                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                        border-radius: 50px 50px;
-                        opacity: 0.9;
-                    }
+                            transform: translateX(28px);
+                        }
                     }
                 }        
             }

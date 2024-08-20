@@ -1,5 +1,6 @@
 // para desktop
 @media only screen and (min-width:768px){
+    //section portada
    .portada-container{
         background-color: white;
         .container{
@@ -12,7 +13,23 @@
             }    
         }
     }
+    //section animales
+    
 
+    //section pelu
+    .pelu-container{
+        margin: 40px 0px;
+        .container{ 
+            grid-template-columns: repeat(2, 1fr);
+            padding: 4rem 2rem 0rem 2rem;
+            .box{
+             h3{
+                font-size:2.5rem;
+            }
+            }    
+        }
+    }
+     //section pie-pagina
     .pie-pagina{
         .grupo-1{
             grid-template-columns: repeat(4, 1fr);
