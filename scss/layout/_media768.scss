@@ -32,7 +32,22 @@
      //section pie-pagina
     .pie-pagina{
         .grupo-1{
-            grid-template-columns: repeat(4, 1fr);
-        }
+            grid-template-columns: 210px auto auto auto;
+            justify-content: center;
+            column-gap: 10%;
+            .box{
+                img{
+                    max-width: 40%;
+                }
+            }
+        }    
     }
+    //html menu gatos
+    .menu-container{
+        .container{
+            ul{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }   
 }

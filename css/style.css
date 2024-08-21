@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sora", sans-serif;
 }
 
 .sora-uniquifier {
@@ -11,17 +12,22 @@
   font-style: normal;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 2.488rem;
+}
+
 h3 {
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-size: 2.441rem;
+  font-size: 2.074rem;
 }
 
 p {
   font-family: "Sora", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  color: #334255;
+  color: #525a7a;
 }
 
 .boton {
@@ -37,34 +43,35 @@ p {
 }
 
 .menu-container {
-  background-color: #1c7ed6;
-  width: 100%;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
+  color: aqua;
 }
-.menu-container .box {
-  text-decoration: none;
+.menu-container .container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 18px;
+  list-style: none;
+  margin-left: -30px;
+}
+.menu-container .container ul li {
+  border: 2px solid #dbe4ff;
+  border-radius: 8px;
   text-align: center;
 }
-.menu-container .box ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  color: #1c7ed6;
-}
-.menu-container .box ul li {
-  margin: 5px;
-}
-.menu-container .box ul li a {
+.menu-container .container ul li a {
+  text-decoration: none;
   font-weight: 600;
-  font-size: 1.2rem;
-  color: #1c7ed6;
-  background-color: red;
-  border-radius: 10px;
+  font-size: 1rem;
 }
-.menu-container .box ul li a:hover {
-  text-decoration: underline;
+.menu-container .container ul li:hover {
+  background-color: #d0ebff;
+}
+
+.presentacion {
+  text-align: center;
+  margin: 30px 8px;
+}
+.presentacion h3 {
+  color: #5c7cfa;
 }
 
 header {
@@ -139,12 +146,12 @@ header .dato-container p {
 
 .productos-container {
   background-color: rgb(253, 253, 253);
-  padding: 30px 10px;
+  padding: 20px 10px;
 }
 .productos-container .container {
   text-align: center;
   justify-content: center;
-  padding: 20px 8px;
+  padding: 10px 8px;
 }
 .productos-container .container h3 {
   color: #1c7ed6;
@@ -209,10 +216,6 @@ header .dato-container p {
   max-width: 70%;
   height: 0%;
 }
-.animales-container .container .row .col-12 a img:hover,
-.animales-container .container .row .col-md-6 a img:hover {
-  transform: translateX(28px);
-}
 
 .pelu-container {
   width: 100%;
@@ -259,24 +262,21 @@ header .dato-container p {
 .pie-pagina .grupo-1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 40px;
-  padding: 45px 10px;
+  row-gap: 24px;
+  padding: 30px 24px;
 }
-.pie-pagina .grupo-1 .box {
-  padding-top: 25px;
-}
-.pie-pagina .grupo-1 .box figure {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.pie-pagina .grupo-1 .box img {
+  max-width: 35%;
+  padding-bottom: 18px;
 }
 .pie-pagina .grupo-1 .box h4 {
   color: white;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .pie-pagina .grupo-1 .box p {
+  font-size: 0.9rem;
   color: #e6f4f1;
   margin-bottom: 8px;
 }
@@ -291,8 +291,24 @@ header .dato-container p {
   text-align: center;
   transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .box .red-social:hover {
-  color: #daa21b;
+.pie-pagina .grupo-1 .box .red-social a:hover {
+  transform: scale(1.6);
+}
+.pie-pagina .grupo-1 .box-t h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.pie-pagina .grupo-1 .box-t a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #e6f4f1;
+  margin-bottom: 8px;
+}
+.pie-pagina .grupo-1 .box-t a:hover {
+  color: #003581;
 }
 .pie-pagina .grupo-2 {
   background-color: #003581;
@@ -309,7 +325,6 @@ header .dato-container p {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  background-color: aquamarine;
 }
 
 .card-container {
@@ -332,8 +347,7 @@ header .dato-container p {
 }
 
 .menu-conten {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   font-size: 30px;
   text-align: center;
   background-color: aqua;
@@ -341,7 +355,7 @@ header .dato-container p {
 .menu-conten .box {
   background-color: #f1f1f1;
   padding: 10px;
-  flex: 50%;
+  border-radius: 8px;
 }
 .menu-conten .box a {
   color: rgb(209, 24, 24);
@@ -350,6 +364,11 @@ header .dato-container p {
   text-align: center;
 }
 
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .pie-pagina .grupo-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media only screen and (min-width: 768px) {
   .portada-container {
     background-color: white;
@@ -372,6 +391,14 @@ header .dato-container p {
     font-size: 2.5rem;
   }
   .pie-pagina .grupo-1 {
+    grid-template-columns: 210px auto auto auto;
+    justify-content: center;
+    column-gap: 10%;
+  }
+  .pie-pagina .grupo-1 .box img {
+    max-width: 40%;
+  }
+  .menu-container .container ul {
     grid-template-columns: repeat(4, 1fr);
   }
 }

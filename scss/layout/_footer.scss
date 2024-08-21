@@ -4,43 +4,61 @@
     .grupo-1{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 40px;
-        padding: 45px 10px;
+        row-gap:24px;
+        padding: 30px 24px;
         .box{
-            padding-top: 25px;
-
-            figure{
-                height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            img{
+                max-width: 35%;
+                padding-bottom: 18px;
             }
             h4{
                 color: white;
                 margin-bottom: 15px;
-                font-size: 18px;
+                font-size: 1rem;
+                font-weight: 700;
             }
             p{
+                font-size: 0.9rem;
                 color: #e6f4f1;
                 margin-bottom: 8px;
             }
-            .red-social{
-                a{
-                    display: inline-block;
-                    text-decoration: none;
-                    width: 45px;
-                    height: 45px;
-                    line-height: 45px;
-                    color: #e6f4f1;
-                    margin-right: 6px;
-                    text-align: center;
-                    transition: all 300ms ease;
-                }
+        .red-social{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: #e6f4f1;
+                margin-right: 6px;
+                text-align: center;
+                transition: all 300ms ease;
+                
                 &:hover{
-                    color: #daa21b;
+                    transform: scale(1.6);
+                }
                 }
             }
             
+        }
+        .box-t{
+            h4{
+                color: white;
+                margin-bottom: 15px;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                font-size: 0.9rem;
+                color: #e6f4f1;
+                margin-bottom: 8px;
+
+                &:hover{
+                    color: #003581;
+                }
+            }
         }
     }
     .grupo-2{

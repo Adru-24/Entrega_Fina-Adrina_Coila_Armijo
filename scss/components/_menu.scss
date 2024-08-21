@@ -1,30 +1,25 @@
 .menu-container{
-    background-color: #1c7ed6;
-    width: 100%; 
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    .box{text-decoration: none;
-        text-align: center;
+    color: aqua;
+    .container{
         ul{ 
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 18px;
             list-style: none;
-            color: #1c7ed6;
-            
-            
-            li{
-                margin: 5px;
+            margin-left: -30px;
+            li{  
+                border: 2px solid #dbe4ff;
+                border-radius: 8px;
+                text-align: center;
                 
-                a{
+                
+                a{  
+                    text-decoration: none;
                     font-weight: 600;
-                    font-size: 1.2rem;
-                    color: #1c7ed6;
-                    background-color: red;
-                    border-radius: 10px;
-                    &:hover{
-                        text-decoration:underline;
-                    }
+                    font-size: 1rem;
+                }
+                &:hover{
+                    background-color:#d0ebff;
                 }
             }
         }
