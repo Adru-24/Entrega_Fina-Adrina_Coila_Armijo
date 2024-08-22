@@ -1,0 +1,57 @@
+@media only screen and (min-width:1280px){
+    //section portada
+   .portada-container{
+    background-color: white;
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 0px;
+        .box{
+         h1{
+            font-size:3.2rem;
+        }
+        }    
+    }
+}
+    //section animales
+
+    //section pelu
+    .pelu-container{
+    margin: 40px 0px;
+    .container{ 
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem 2rem 0rem 2rem;
+        .box{
+         h3{
+            font-size:2.5rem;
+        }
+        }    
+    }
+    }
+    //section pie-pagina
+    .pie-pagina{
+        .grupo-1{
+            grid-template-columns: 210px auto auto auto;
+            justify-content: center;
+            column-gap: 10%;
+            .box{
+                img{
+                    max-width: 40%;
+                }
+            }
+        }    
+    }
+
+    //html-peluqueria
+    .baños-container{
+        .container{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .tamaños-container{
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            justify-content: center;
+        }
+    }
+}

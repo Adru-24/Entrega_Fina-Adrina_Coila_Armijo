@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +43,21 @@ p {
   background-color: #00afff;
 }
 
+.boton-1 {
+  text-align: center;
+  justify-content: center;
+  color: #1c7ed6;
+  border: 1px solid rgb(214, 214, 214);
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 100px;
+  background: white;
+}
+.boton-1:hover {
+  color: white;
+  background-color: #00afff;
+}
+
 .menu-container {
   color: aqua;
 }
@@ -68,7 +84,7 @@ p {
 
 .presentacion {
   text-align: center;
-  margin: 30px 8px;
+  padding: 50px 8px;
 }
 .presentacion h3 {
   color: #5c7cfa;
@@ -364,12 +380,112 @@ header .dato-container p {
   text-align: center;
 }
 
+.presentacion {
+  background-color: #f8fcff;
+}
+
+.baños-container {
+  background-color: #f8fcff;
+  padding: 0px 8px;
+}
+.baños-container .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+}
+.baños-container .container .box {
+  display: grid;
+  align-content: end;
+  justify-content: center;
+}
+.baños-container .container .box img {
+  max-width: 100%;
+  height: auto;
+}
+.baños-container .container .box ul {
+  list-style: none;
+  color: #1c7ed6;
+  font-size: 16px;
+}
+.baños-container .container .box ul li {
+  line-height: 2.3;
+}
+.baños-container .container .box ul i {
+  margin-right: 10px;
+}
+
+.tamaños-container {
+  background-color: #f8fcff;
+  padding: 40px 8px;
+}
+.tamaños-container h4 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 1.6em;
+  color: #525a7a;
+}
+.tamaños-container .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 18px;
+}
+.tamaños-container .container .box {
+  border: 2px solid #e7f5ff;
+  border-radius: 18px;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+}
+.tamaños-container .container .box img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px 16px 0px 0px;
+}
+.tamaños-container .container .box .card-body {
+  padding: 18px 8px;
+  text-align: left;
+}
+.tamaños-container .container .box .card-body h5 {
+  color: #1c7ed6;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.tamaños-container .container .box .card-body p {
+  color: #3b4f61;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.tamaños-container .container .box .boton-1 {
+  margin: 10px;
+}
+.tamaños-container .container .box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .pie-pagina .grupo-1 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .baños-container .container {
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+  .baños-container .container .first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .baños-container .container :nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .portada-container {
     background-color: white;
   }
@@ -398,8 +514,64 @@ header .dato-container p {
   .pie-pagina .grupo-1 .box img {
     max-width: 40%;
   }
+  .baños-container .container {
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50%;
+  }
+  .baños-container .container .first-child {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+  .baños-container .container :nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .tamaños-container .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+  }
   .menu-container .container ul {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .portada-container {
+    background-color: white;
+  }
+  .portada-container .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 0px;
+  }
+  .portada-container .container .box h1 {
+    font-size: 3.2rem;
+  }
+  .pelu-container {
+    margin: 40px 0px;
+  }
+  .pelu-container .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 2rem 0rem 2rem;
+  }
+  .pelu-container .container .box h3 {
+    font-size: 2.5rem;
+  }
+  .pie-pagina .grupo-1 {
+    grid-template-columns: 210px auto auto auto;
+    justify-content: center;
+    column-gap: 10%;
+  }
+  .pie-pagina .grupo-1 .box img {
+    max-width: 40%;
+  }
+  .baños-container .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tamaños-container .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
   }
 }
 

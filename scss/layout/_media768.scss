@@ -1,5 +1,5 @@
 // para desktop
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) and (max-width:1279px){
     //section portada
    .portada-container{
         background-color: white;
@@ -15,7 +15,6 @@
     }
     //section animales
     
-
     //section pelu
     .pelu-container{
         margin: 40px 0px;
@@ -29,7 +28,8 @@
             }    
         }
     }
-     //section pie-pagina
+
+    //section pie-pagina
     .pie-pagina{
         .grupo-1{
             grid-template-columns: 210px auto auto auto;
@@ -42,6 +42,31 @@
             }
         }    
     }
+
+    //html-peluqueria
+    .baños-container{
+        .container{
+            align-content: center;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 50%;
+            .first-child{
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+            }
+            :nth-child(2){
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+                }
+        }
+    }
+    .tamaños-container{
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            justify-content: center;
+        }
+    }
+    
     //html menu gatos
     .menu-container{
         .container{
@@ -49,5 +74,5 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         }
-    }   
+    } 
 }
