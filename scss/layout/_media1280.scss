@@ -19,7 +19,6 @@
     margin: 40px 0px;
     .container{ 
         grid-template-columns: repeat(2, 1fr);
-        padding: 4rem 2rem 0rem 2rem;
         .box{
          h3{
             font-size:2.5rem;
@@ -30,12 +29,12 @@
     //section pie-pagina
     .pie-pagina{
         .grupo-1{
-            grid-template-columns: 210px auto auto auto;
-            justify-content: center;
-            column-gap: 10%;
+            grid-template-columns: 80px 200px 200px 200px 200px;
+            justify-content: space-evenly;
+            column-gap: 5%;
             .box{
                 img{
-                    max-width: 40%;
+                    max-width: 100%;
                 }
             }
         }    
@@ -52,6 +51,23 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(1, 1fr);
             justify-content: center;
+        }
+    }
+
+    //html menu gatos
+    .menu-container{
+        .container{
+            ul{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+    //contacto
+    .formulario-container{
+        .container{
+            display: grid;
+            grid-template-columns: 2, 1fr;
+            grid-template-rows: repeat(1, 1fr);
         }
     }
 }

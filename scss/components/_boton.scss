@@ -6,9 +6,11 @@
     padding: 15px 32px;
     font-size: 18px;
     border-radius: 10px;
-&:hover{
-    background-color: #00afff;
-}
+    cursor: pointer;
+    &:hover{
+        background-color: #00afff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    }
 }
 .boton-1{
     text-align: center;
@@ -19,8 +21,11 @@
     font-size: 16px;
     border-radius: 100px;
     background: white;
+    cursor: pointer;
     &:hover{
         color: white;
         background-color: #00afff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+        
     }
 }

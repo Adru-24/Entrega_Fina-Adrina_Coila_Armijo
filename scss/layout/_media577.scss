@@ -3,7 +3,14 @@
     //section pie-pagina
     .pie-pagina{
         .grupo-1{
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows:auto ;
+            :first-child{
+                grid-column-start: span 1;
+            }
+            :nth-child(2){
+                grid-column: 2 / 4;
+                }
         }    
     }
 
@@ -13,6 +20,7 @@
             align-content: center;
             grid-template-columns: 1fr 1fr;
             grid-auto-rows: auto;
+            
             .first-child{
             grid-column: 1 / 3;
             grid-row: 1 / 3;
@@ -21,6 +29,14 @@
                 grid-column: 2 / 3;
                 grid-row: 1 / 3;
                 }
+        }
+    }
+    //contacto
+    .formulario-container{
+        .container{
+            display: grid;
+            grid-template-columns: 2, 1fr;
+            grid-auto-rows: auto
         }
     }
 }

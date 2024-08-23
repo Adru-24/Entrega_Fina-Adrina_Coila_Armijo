@@ -1,0 +1,100 @@
+//HTML -contactos
+//formulario
+.formulario-container{
+    background: #edf2ff;
+    padding: 20px;
+
+    .container{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); ;
+        column-gap: 16px;
+        row-gap: 16px;
+        background: #1c7ed6;
+        border-radius: 25px;
+        .box-info{
+            color: antiquewhite;
+            row-gap: 30px;
+
+            h4{
+                text-align: left;
+                color: white;
+            }
+            .data{
+                
+                h5{
+                    color: white;
+                }
+                p{
+                    color: #e6f4f1;
+                    font-size: 1rem;
+
+                }
+            }
+            .redes{
+                a{  
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: #e6f4f1;
+                    margin-right: 6px;
+                    text-align: center;
+                    transition: all 300ms ease;
+                        
+                    &:hover{
+                        transform: scale(1.6);
+                    }
+                    
+                }
+            }
+        }
+        form{
+            background-color:  #daa21b;
+            border-radius: 16px;
+            padding: 20px 8px;
+            
+            .input-box{
+                padding: 8px;
+                color: #1c7ed6;
+                input{
+                    border: none;
+                    width: 100%;
+                    height: 40px;
+                    padding: 10px;
+                    color: #1c7ed6;
+                    border-radius: 4px;
+                    font-size: 15px;
+                }
+                textarea{
+                    border: none;
+                    width: 100%;
+                    height: 130px;
+                    background-color: #fcf5e5;
+                    color: #1c7ed6;
+                    padding: 10px;
+                    border-radius: 4px;
+
+                }
+                button{
+                    border: none;
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 10px;
+                    color:#e6f4f1; 
+                    background-color:#0064b9;
+                    cursor: pointer;
+                    font-size: 18px;
+                    &:hover{
+                        color: #0064b9;
+                        background-color:#e6f4f1;
+                        border: 1px solid #0064b9;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+                    }
+                }
+            }
+        }
+    }
+}
