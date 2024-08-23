@@ -1,34 +1,36 @@
 //HTML -contactos
 //formulario
 .formulario-container{
-    background: #edf2ff;
+    background:#f8fcff;
     padding: 20px;
 
     .container{
-        padding: 30px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr); ;
         column-gap: 16px;
-        row-gap: 16px;
-        background: #1c7ed6;
+        row-gap: 8px;
         border-radius: 25px;
+        padding: 30px;
         .box-info{
             color: antiquewhite;
-            row-gap: 30px;
-
+            display: grid;
             h4{
                 text-align: left;
-                color: white;
+                color:#0064b9;
+                font-weight: 800;
+                font-size: 1.8rem;
             }
             .data{
                 
                 h5{
-                    color: white;
+                color: #daa21b;
+                font-size: 1.1rem;
+                font-weight: 600;
                 }
                 p{
-                    color: #e6f4f1;
-                    font-size: 1rem;
+                    color: #64748B;
+                    font-size: 0.9rem;
 
                 }
             }
@@ -39,7 +41,7 @@
                     width: 45px;
                     height: 45px;
                     line-height: 45px;
-                    color: #e6f4f1;
+                    color: #1c7ed6;
                     margin-right: 6px;
                     text-align: center;
                     transition: all 300ms ease;
@@ -52,13 +54,11 @@
             }
         }
         form{
-            background-color:  #daa21b;
+            background-color:#1c7ed6;
             border-radius: 16px;
-            padding: 20px 8px;
-            
+            padding: 40px 8px;
             .input-box{
                 padding: 8px;
-                color: #1c7ed6;
                 input{
                     border: none;
                     width: 100%;
@@ -66,35 +66,70 @@
                     padding: 10px;
                     color: #1c7ed6;
                     border-radius: 4px;
-                    font-size: 15px;
+                    font-size: 14px;
+                    background-color: white;
+                }
+                select{
+                    
+                    border: none;
+                    width: 40%;
+                    height: 40px;
+                    padding: 10px;
+                    color: #1c7ed6;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    background-color: white;
                 }
                 textarea{
                     border: none;
                     width: 100%;
                     height: 130px;
-                    background-color: #fcf5e5;
+                    background-color: white;
                     color: #1c7ed6;
                     padding: 10px;
                     border-radius: 4px;
+                    font-size: 14px;
 
                 }
                 button{
                     border: none;
                     width: 100%;
                     height: 40px;
-                    border-radius: 10px;
-                    color:#e6f4f1; 
-                    background-color:#0064b9;
+                    border-radius: 5px;
+                    color: white; 
+                    background-color:#daa21b;
+                    transition: 1s;
                     cursor: pointer;
+                    font-weight: 500;
                     font-size: 18px;
                     &:hover{
-                        color: #0064b9;
-                        background-color:#e6f4f1;
-                        border: 1px solid #0064b9;
+                        color: white;
+                        font-weight: 800;
+                        background-color:#ffc400;
+                        border: 2px solid #daa21b;
                         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
                     }
                 }
             }
+        }
+    }
+}
+.mapa-container{
+    background:#e6f4f1;
+    padding: 40px 10px;
+    h4{
+        text-align: left;
+         color:#0064b9;
+        font-weight: 800;
+        font-size: 1.8rem;
+        }
+    .container{
+        
+        iframe{
+            width:100%;
+            height: 50%;
+            border-radius: 18px;
+            border:2 solid #0b725c;
         }
     }
 }

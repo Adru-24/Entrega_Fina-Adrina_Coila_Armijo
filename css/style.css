@@ -38,7 +38,8 @@ p {
   border: none;
   padding: 15px 32px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 5px;
+  transition: 1s;
   cursor: pointer;
 }
 .boton:hover {
@@ -55,6 +56,7 @@ p {
   font-size: 16px;
   border-radius: 100px;
   background: white;
+  transition: 1s;
   cursor: pointer;
 }
 .boton-1:hover {
@@ -463,7 +465,7 @@ header .dato-container p {
 }
 .tamaños-container .container .box .card-body p {
   color: #3b4f61;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
 }
 .tamaños-container .container .box .boton-1 {
@@ -474,33 +476,36 @@ header .dato-container p {
 }
 
 .formulario-container {
-  background: #edf2ff;
+  background: #f8fcff;
   padding: 20px;
 }
 .formulario-container .container {
-  padding: 30px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
   column-gap: 16px;
-  row-gap: 16px;
-  background: #1c7ed6;
+  row-gap: 8px;
   border-radius: 25px;
+  padding: 30px;
 }
 .formulario-container .container .box-info {
   color: antiquewhite;
-  row-gap: 30px;
+  display: grid;
 }
 .formulario-container .container .box-info h4 {
   text-align: left;
-  color: white;
+  color: #0064b9;
+  font-weight: 800;
+  font-size: 1.8rem;
 }
 .formulario-container .container .box-info .data h5 {
-  color: white;
+  color: #daa21b;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 .formulario-container .container .box-info .data p {
-  color: #e6f4f1;
-  font-size: 1rem;
+  color: #64748B;
+  font-size: 0.9rem;
 }
 .formulario-container .container .box-info .redes a {
   display: inline-block;
@@ -508,7 +513,7 @@ header .dato-container p {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #e6f4f1;
+  color: #1c7ed6;
   margin-right: 6px;
   text-align: center;
   transition: all 300ms ease;
@@ -517,13 +522,12 @@ header .dato-container p {
   transform: scale(1.6);
 }
 .formulario-container .container form {
-  background-color: #daa21b;
+  background-color: #1c7ed6;
   border-radius: 16px;
-  padding: 20px 8px;
+  padding: 40px 8px;
 }
 .formulario-container .container form .input-box {
   padding: 8px;
-  color: #1c7ed6;
 }
 .formulario-container .container form .input-box input {
   border: none;
@@ -532,32 +536,64 @@ header .dato-container p {
   padding: 10px;
   color: #1c7ed6;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 14px;
+  background-color: white;
+}
+.formulario-container .container form .input-box select {
+  border: none;
+  width: 40%;
+  height: 40px;
+  padding: 10px;
+  color: #1c7ed6;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
 }
 .formulario-container .container form .input-box textarea {
   border: none;
   width: 100%;
   height: 130px;
-  background-color: #fcf5e5;
+  background-color: white;
   color: #1c7ed6;
   padding: 10px;
   border-radius: 4px;
+  font-size: 14px;
 }
 .formulario-container .container form .input-box button {
   border: none;
   width: 100%;
   height: 40px;
-  border-radius: 10px;
-  color: #e6f4f1;
-  background-color: #0064b9;
+  border-radius: 5px;
+  color: white;
+  background-color: #daa21b;
+  transition: 1s;
   cursor: pointer;
+  font-weight: 500;
   font-size: 18px;
 }
 .formulario-container .container form .input-box button:hover {
-  color: #0064b9;
-  background-color: #e6f4f1;
-  border: 1px solid #0064b9;
+  color: white;
+  font-weight: 800;
+  background-color: #ffc400;
+  border: 2px solid #daa21b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container {
+  background: #e6f4f1;
+  padding: 40px 10px;
+}
+.mapa-container h4 {
+  text-align: left;
+  color: #0064b9;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.mapa-container .container iframe {
+  width: 100%;
+  height: 50%;
+  border-radius: 18px;
+  border: 2 solid #0b725c;
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
@@ -638,6 +674,10 @@ header .dato-container p {
   .menu-container .container ul {
     grid-template-columns: repeat(4, 1fr);
   }
+  .formulario-container .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .portada-container {
@@ -680,8 +720,7 @@ header .dato-container p {
   }
   .formulario-container .container {
     display: grid;
-    grid-template-columns: 2, 1fr;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
