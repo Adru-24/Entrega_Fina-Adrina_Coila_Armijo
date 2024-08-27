@@ -25,7 +25,7 @@
             }
             ul{
                 list-style: none;
-                color: #1c7ed6;
+                color: $cool-blue;
                 font-size: 16px;
                 li{
                     line-height: 2.3;
@@ -73,7 +73,7 @@
                 padding: 18px 8px;
                 text-align: left;
                 h5{
-                    color: #1c7ed6;
+                    color: $cool-blue;
                     font-weight: 600;
                     font-size: 1.1rem;
                 }
