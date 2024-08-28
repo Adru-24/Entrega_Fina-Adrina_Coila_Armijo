@@ -1,10 +1,14 @@
 .menu-container{
-    color: aqua;
+    background: #f8fcff;
+    padding-bottom: 20px;
+    color: rgb(211, 233, 233);
     .container{
         ul{ 
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 18px;
+            column-gap: 16px;
+            row-gap: 8px;
             list-style: none;
             margin-left: -30px;
             li{  
@@ -17,7 +21,10 @@
                     font-size: 1rem;
                 }
                 &:hover{
-                    background-color:#d0ebff;
+                    color: white;
+                    background: #dbe4ff;
+                    border: 2px solid $cool-blue;
+                    
                 }
             }
         }

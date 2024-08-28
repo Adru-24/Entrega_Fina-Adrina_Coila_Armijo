@@ -1,6 +1,7 @@
 //base
 @import './base/reset';
 //components
+@import './components/icono-w';
 @import './components/boton';
 @import './components/menu';
 @import './components/presentacion';
@@ -20,6 +21,7 @@
 @import './layout/peluqueria';
 @import './layout/contacto';
 @import './layout/nosotros';
+@import './layout/adopcion';
 //media
 @import './layout/media320';
 @import './layout/media577';

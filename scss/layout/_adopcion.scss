@@ -1,0 +1,54 @@
+// section galeria
+.galeria{
+    background-color: #f8fcff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        max-width: 310px;
+        padding: 16px;
+        
+    }
+}
+
+.adopta{
+    background-color: #f8fcff;
+    padding: 40px 8px;
+    width: 100%;
+
+    h3{
+        color: $cool-blue;
+        text-align: center;
+        padding: 30px 0px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); ;
+        column-gap: 16px;
+        row-gap: 16px;
+        background-color: #ffffff;
+        border-radius: 18px;
+        border: 1px solid $cool-blue;
+        padding: 35px 15px 30px 10px;
+        width: 95%;
+        .box{
+            display: grid;
+            align-content: center;
+            justify-content: space-between;
+            
+
+            ul{
+                list-style: none;
+                color: $cool-blue;
+                font-size: 14px;
+                li{
+                    padding: 12px 0px;
+                }
+                i{
+                    margin-right:10px;
+                }
+            }
+        }
+    }
+}

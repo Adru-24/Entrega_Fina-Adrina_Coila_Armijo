@@ -115,11 +115,11 @@
     }
 }
 .mapa-container{
-    background:#e6f4f1;
+    background: $cool-orange;
     padding: 40px 10px;
     h4{
         text-align: left;
-         color:#0064b9;
+         color: white;
         font-weight: 800;
         font-size: 1.8rem;
         }
@@ -127,9 +127,8 @@
         
         iframe{
             width:100%;
-            height: 50%;
-            border-radius: 18px;
-            border:2 solid #0b725c;
+            height: auto;
+            border-radius: 16px;
         }
     }
 }

@@ -32,6 +32,27 @@ p {
   color: #64748B;
 }
 
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: white;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: white;
+}
+
 .boton {
   color: white;
   background-color: #1c7ed6;
@@ -66,12 +87,16 @@ p {
 }
 
 .menu-container {
-  color: aqua;
+  background: #f8fcff;
+  padding-bottom: 20px;
+  color: rgb(211, 233, 233);
 }
 .menu-container .container ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 18px;
+  column-gap: 16px;
+  row-gap: 8px;
   list-style: none;
   margin-left: -30px;
 }
@@ -86,7 +111,9 @@ p {
   font-size: 1rem;
 }
 .menu-container .container ul li:hover {
-  background-color: #d0ebff;
+  color: white;
+  background: #dbe4ff;
+  border: 2px solid #1c7ed6;
 }
 
 .presentacion {
@@ -580,20 +607,19 @@ header .dato-container p {
 }
 
 .mapa-container {
-  background: #e6f4f1;
+  background: #daa21b;
   padding: 40px 10px;
 }
 .mapa-container h4 {
   text-align: left;
-  color: #0064b9;
+  color: white;
   font-weight: 800;
   font-size: 1.8rem;
 }
 .mapa-container .container iframe {
   width: 100%;
-  height: 50%;
-  border-radius: 18px;
-  border: 2 solid #0b725c;
+  height: auto;
+  border-radius: 16px;
 }
 
 .info-container {
@@ -618,7 +644,7 @@ header .dato-container p {
   border-radius: 16px 16px 0px 0px;
 }
 .info-container .container .box h3 {
-  color: #daa21b;
+  color: #1c7ed6;
   padding-bottom: 24px;
 }
 .info-container .container .box iframe {
@@ -628,31 +654,33 @@ header .dato-container p {
 }
 
 .card2 {
-  background-color: #daa21b;
-  padding: 40px 8px;
+  background-color: #00afff;
+  width: 100%;
+  padding: 30px 0px;
 }
 .card2 h3 {
   color: #e6f4f1;
   text-align: center;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 .card2 .container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  column-gap: 8px;
+  column-gap: 16px;
   row-gap: 16px;
-  padding: 20px 0px;
+  padding: 40px 0px;
+  width: 96%;
 }
 .card2 .container .card {
-  padding: 16px;
-  background-color: #e6f4f1;
+  padding: 12px;
+  background-color: white;
 }
 .card2 .container .card h5 {
   color: #1c7ed6;
   font-weight: 600;
-  font-size: 1rem;
-  padding-top: 20px;
+  font-size: 1.6rem;
+  padding-top: 10px;
 }
 .card2 .container .card p {
   padding-top: 10px;
@@ -660,6 +688,56 @@ header .dato-container p {
 }
 .card2 .container .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.galeria {
+  background-color: #f8fcff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.galeria img {
+  max-width: 310px;
+  padding: 16px;
+}
+
+.adopta {
+  background-color: #f8fcff;
+  padding: 40px 8px;
+  width: 100%;
+}
+.adopta h3 {
+  color: #1c7ed6;
+  text-align: center;
+  padding: 30px 0px;
+}
+.adopta .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #1c7ed6;
+  padding: 35px 15px 30px 10px;
+  width: 95%;
+}
+.adopta .container .box {
+  display: grid;
+  align-content: center;
+  justify-content: space-between;
+}
+.adopta .container .box ul {
+  list-style: none;
+  color: #1c7ed6;
+  font-size: 14px;
+}
+.adopta .container .box ul li {
+  padding: 12px 0px;
+}
+.adopta .container .box ul i {
+  margin-right: 10px;
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
@@ -740,6 +818,11 @@ header .dato-container p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
+  .adopta .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 @media only screen and (min-width: 1280px) {
   .portada-container {
@@ -784,11 +867,6 @@ header .dato-container p {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  info-container .container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-  }
   .info-container .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -798,6 +876,11 @@ header .dato-container p {
   .card2 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .adopta .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 }
