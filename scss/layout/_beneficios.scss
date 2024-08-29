@@ -2,15 +2,19 @@
 .beneficios-container{
     width: 100%; 
     margin-top: 2rem;
+
     .container{
-        background-color: #daa21b;
-        padding:3rem 3rem;
-        border-radius: 15px;
+        padding:1rem 1rem;
+
         .row{
             justify-content: center;
             text-align: center;
 
             .col-sm{
+                background-color: #daa21b;
+                border-radius: 15px;
+                margin: 4px;
+                
                 img{
                     width: 4rem;
                     margin: 4px;

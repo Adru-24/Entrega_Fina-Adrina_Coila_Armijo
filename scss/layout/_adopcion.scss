@@ -4,10 +4,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 18px;
+
     img{
         max-width: 310px;
-        padding: 16px;
+        padding: 8px;
+        border-radius: 8px;
         
+        &:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+        }
     }
 }
 

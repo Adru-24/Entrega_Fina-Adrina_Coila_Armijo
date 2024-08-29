@@ -1,3 +1,4 @@
+// para desktop
 @media only screen and (min-width:1280px){
     //header
     header{
@@ -6,41 +7,40 @@
                 display: block;
                 padding-left: 8px;
                 color: $cool-blue;
-                }
             }
         }
     }
     //section portada
    .portada-container{
     background-color: white;
-    .container{
-        grid-template-columns: repeat(2, 1fr);
-        padding: 30px 0px;
-        .box{
-         h1{
-            font-size:3.2rem;
-        }
-        }    
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+            padding: 30px 0px;
+            .box{
+            h1{
+                font-size:3.2rem;
+            }
+            } 
+        }   
     }
-
-    //section animales
 
     //section pelu
     .pelu-container{
-    margin: 40px 0px;
-    .container{ 
-        grid-template-columns: repeat(2, 1fr);
-        .box{
-         h3{
-            font-size:2.5rem;
+        margin: 40px 0px;
+        .container{ 
+            grid-template-columns: repeat(2, 1fr);
+            .box{
+            h3{
+                font-size:2.5rem;
+            }
+            }    
         }
-        }    
     }
-    }
+
     //section pie-pagina
     .pie-pagina{
         .grupo-1{
-            grid-template-columns: 80px 200px 200px 200px 200px;
+            grid-template-columns: 70px 100px auto auto auto;
             justify-content: space-evenly;
             column-gap: 5%;
             .box{
@@ -86,14 +86,26 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, 1fr);
-            padding: 8px;
+            padding: 30px 8px;
         }
-   }
+    }
     .card2{
+        padding: 30px 8px;
         .container{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(1, 1fr);
+            padding: 20px 8px;
+        }
+    }
+    .info-video-container{
+        padding: 40px 8px;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            padding: 30px 8px;
+
         }
     }
     //HTML adopcion

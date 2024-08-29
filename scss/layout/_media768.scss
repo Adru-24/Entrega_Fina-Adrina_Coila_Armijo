@@ -1,6 +1,16 @@
-// para desktop
+// para tablet
 @media only screen and (min-width:768px) and (max-width:1279px){
-    
+    //header
+    header{
+        .navbar{
+            .carrito{
+                display: block;
+                padding-left: 8px;
+                color: $cool-blue;
+            }
+        }
+    } 
+
     //section portada
    .portada-container{
         background-color: white;
@@ -14,7 +24,6 @@
             }    
         }
     }
-    //section animales
     
     //section pelu
     .pelu-container{
@@ -66,13 +75,13 @@
         }
     } 
 
-    //HTML contacto
+    //HTML nosotros
    .info-container{
         .container{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, 1fr);
-            padding: 8px;
+            padding: 20px 8px;
 
             .box{
                 padding: 24px 0px;
@@ -80,10 +89,21 @@
         }
     }
     .card2{
+        padding: 30px 8px;
         .container{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+    .info-video-container{
+        padding: 30px 8px;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, 1fr);
+            padding: 8px;
+
         }
     }
     //HTML adopcion
