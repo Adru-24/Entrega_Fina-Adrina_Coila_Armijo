@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PICHIS PetShop y Peluquería</title>
+    <title>PICHIS | PetShop y Peluquería</title>
+    <!-- meta desciption-->
+     <!--
+    <meta name="description" content="Petshop para perros y gatos | tu Tienda de Animales donde encontras comida, juguetes, accesorios y la mejor Peluquería y Baño, para tu mascota. La Tienda de Pichis, te espera...">  -->
+    <!--meta keywords -->
+     <!--
+    <meta name="keywords" content="Tienda de Macotas, Petshop, Peluquería, Baños, Peluquería Mascota, Mascotas, alimento para perros, alimento para gatos, perros, gatos"< -->
+    <!-- meta autor -->
+     <meta name="autor" content="Adriana Coila Armijo">
     <!-- favicon -->
     <link rel="icon" href="imagenes/logo-favicon.png" type="imagenes/png">
     <!-- font -->
@@ -23,9 +31,9 @@
     <!-- Navbar bootstrap -->
      <header>
       <div class="dato-container">
-          <p><strong>🔥</strong>¡Agosto mes de DESCUENTOS!🎁</strong></p>
+        <p><strong>🔥</strong>¡Agosto mes de DESCUENTOS!🎁</strong></p>
       </div>
-       <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg ">
           <div class="container">
             <a class="navbar-brand" href="index.html">
               <img src="imagenes/logo-petshop1.png" alt="logo-petshop">
@@ -36,31 +44,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="html/peluqueria.html">Peluquería</a>
+                  <a class="nav-link color-gris" aria-current="page" href="html/peluqueria.html">Peluquería</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="html/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle color-blue" href="html/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Productos
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="html/gatos.html">Gatos</a></li>
-                    <li><a class="dropdown-item" href="html/perros.html">Perros</a></li>
+                    <li><a class="dropdown-item color-gris" href="html/gatos.html">Gatos</a></li>
+                    <li><a class="dropdown-item color-gris" href="html/perros.html">Perros</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="html/nosotros.html">Nosotros</a>
+                  <a class="nav-link color-gris" href="html/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="html/contactos.html">Contacto</a>
+                  <a class="nav-link color-gris" href="html/adopciones.html">Adopciones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="html/preguntas.html">Adopciones</a>
+                  <a class="nav-link color-gris" href="html/preguntas.html">Contacto</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Buscar</button>
-              </form>
+               <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+               </form>
+            </div>
+            <div class="carrito">
+              <i class="bi bi-basket2-fill color-gris"></i>
             </div>
           </div>
         </nav>
@@ -71,7 +82,7 @@
       <i class="bi bi-whatsapp"></i>
     </a>
     <!-- section portada -->
-     <section class="portada-container">
+    <section class="portada-container">
       <div class="container">
         <div class="box">
           <h1>Los adorables amigos de cuatro patas te esperan</h1>
@@ -122,7 +133,7 @@
         <div class="row">
            <div class="col-6 col-md-3 col-lg-3">  
               <div class="card border border-primary-subtle">  
-                <img src="imagenes/prod-p-1.jpg" class="card-img-top" alt="carrito para perros">  
+                <img src="imagenes/prod-p-1.webp" class="card-img-top" alt="carrito para perros">  
                 <div class="card-body">  
                    <h6>BOLSO TRANSPORTADOR</h6>  
                     <p>$ 49.999</p>  
@@ -135,7 +146,7 @@
               <div class="col-6 col-md-3 col-lg-3">  
                   <div class="card border border-primary-subtle"> 
                     <a href="#">
-                      <img src="imagenes/prod-p-2.jpg" class="card-img-top" alt="carrito para gatos">  
+                      <img src="imagenes/prod-p-2.webp" class="card-img-top" alt="carrito para gatos">  
                     </a> 
                        <div class="card-body">  
                           <h6>CARRITO PARA MASCOTA</h6>  
@@ -162,7 +173,7 @@
   
               <div class="col-6 col-md-3 col-lg-3">  
                  <div class="card border border-primary-subtle">  
-                    <img src="imagenes/prod-p-4.png" class="card-img-top" alt="juguete para mascotas">  
+                    <img src="imagenes/prod-p-4.webp" class="card-img-top" alt="juguete para mascotas">  
                       <div class="card-body">  
                         <h6>CARRITO 3 RUDAS CANINO</h6>  
                         <p>99.999</p>  
@@ -176,7 +187,6 @@
        </div>  
      </section>  
     <!-- fin section de productos-->
-
     <!--sección perros y gatos -enlace-->
     <section class="animales-container">
       <div class="container">

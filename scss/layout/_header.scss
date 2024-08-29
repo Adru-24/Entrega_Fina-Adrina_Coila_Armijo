@@ -12,7 +12,28 @@ header{
         font-weight: 700;
         p{
             color: #26292e;
+            text-align: center;
+        }
+        i{
+            background-color: aqua;
+            font-size: 22px;
+            border: 1px solid #6e6e79 ;
         }
     }
-    
+    .navbar{
+        .nav-item{
+            &:hover{
+                border-bottom: 2px solid $cool-blue;
+            }
+        }
+        .color-gris{
+            color:#6e6e79;
+        }
+        .color-active{ 
+        color: $cool-blue;
+        }
+        .carrito{
+            display: none;
+        }
+    }
 }

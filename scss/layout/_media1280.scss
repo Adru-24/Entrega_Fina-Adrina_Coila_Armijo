@@ -1,4 +1,15 @@
 @media only screen and (min-width:1280px){
+    //header
+    header{
+        .navbar{
+            .carrito{
+                display: block;
+                padding-left: 8px;
+                color: $cool-blue;
+                }
+            }
+        }
+    }
     //section portada
    .portada-container{
     background-color: white;
@@ -11,7 +22,7 @@
         }
         }    
     }
-}
+
     //section animales
 
     //section pelu

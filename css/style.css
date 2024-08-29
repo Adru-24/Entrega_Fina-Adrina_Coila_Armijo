@@ -139,6 +139,24 @@ header .dato-container {
 }
 header .dato-container p {
   color: #26292e;
+  text-align: center;
+}
+header .dato-container i {
+  background-color: aqua;
+  font-size: 22px;
+  border: 1px solid #6e6e79;
+}
+header .navbar .nav-item:hover {
+  border-bottom: 2px solid #1c7ed6;
+}
+header .navbar .color-gris {
+  color: #6e6e79;
+}
+header .navbar .color-active {
+  color: #1c7ed6;
+}
+header .navbar .carrito {
+  display: none;
 }
 
 .portada-container {
@@ -825,64 +843,69 @@ header .dato-container p {
   }
 }
 @media only screen and (min-width: 1280px) {
-  .portada-container {
-    background-color: white;
+  header .navbar .carrito {
+    display: block;
+    padding-left: 8px;
+    color: #1c7ed6;
   }
-  .portada-container .container {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 30px 0px;
-  }
-  .portada-container .container .box h1 {
-    font-size: 3.2rem;
-  }
-  .pelu-container {
-    margin: 40px 0px;
-  }
-  .pelu-container .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .pelu-container .container .box h3 {
-    font-size: 2.5rem;
-  }
-  .pie-pagina .grupo-1 {
-    grid-template-columns: 80px 200px 200px 200px 200px;
-    justify-content: space-evenly;
-    column-gap: 5%;
-  }
-  .pie-pagina .grupo-1 .box img {
-    max-width: 100%;
-  }
-  .baños-container .container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .tamaños-container .container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    justify-content: center;
-  }
-  .menu-container .container ul {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .formulario-container .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .info-container .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    padding: 8px;
-  }
-  .card2 .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .adopta .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-  }
+}
+.portada-container {
+  background-color: white;
+}
+.portada-container .container {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 0px;
+}
+.portada-container .container .box h1 {
+  font-size: 3.2rem;
+}
+.portada-container .pelu-container {
+  margin: 40px 0px;
+}
+.portada-container .pelu-container .container {
+  grid-template-columns: repeat(2, 1fr);
+}
+.portada-container .pelu-container .container .box h3 {
+  font-size: 2.5rem;
+}
+.portada-container .pie-pagina .grupo-1 {
+  grid-template-columns: 80px 200px 200px 200px 200px;
+  justify-content: space-evenly;
+  column-gap: 5%;
+}
+.portada-container .pie-pagina .grupo-1 .box img {
+  max-width: 100%;
+}
+.portada-container .baños-container .container {
+  grid-template-columns: repeat(3, 1fr);
+}
+.portada-container .tamaños-container .container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+}
+.portada-container .menu-container .container ul {
+  grid-template-columns: repeat(4, 1fr);
+}
+.portada-container .formulario-container .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.portada-container .info-container .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: 8px;
+}
+.portada-container .card2 .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.portada-container .adopta .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
 
 /*# sourceMappingURL=style.css.map */
